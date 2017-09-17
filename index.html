@@ -26,6 +26,8 @@
             
             
             
+        <!--
+          
                 <a-assets>
         <a-asset-item id="optimerBoldFont" src="https://raw.githubusercontent.com/coob113/calligraphy/master/Fondamento_Regular.json"></a-asset-item>
         <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
@@ -34,10 +36,17 @@
       <a-entity mixin="boldFont" text-geometry="value: What's up"></a-entity>
       <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
                 
-        <!--
+                
+                
+          Option 2
+          
+          <a-entity text="color: align: center; baseline: top; width: 1; position: 0 0 1; rotation: -90 0 0; font: https://raw.githubusercontent.com/coob113/calligraphy/master/font.fnt; value: Learn Calligraphy with AR.js" ></a-entity>
+          
+          
+          
            <a-image src="calligraphy/text.png" width="4" height="2" position="0 0 1" rotation="-90 0 0" ></a-image>
            
-            <a-entity text="color: align: center; baseline: top; width: 1; position: 0 0 1; rotation: -90 0 0; font: https://fonts.googleapis.com/css?family=Fondamento; value: Learn Calligraphy with AR.js" ></a-entity>
+            
         
          
           <a-text color="red" material="opacity: 0.2" align="center" baseline="top" width="1" position="0 0 1" rotation="-90 0 0" font="https://fonts.googleapis.com/css?family=Fondamento" value="Learn Calligraphy with AR.js"></a-text>
