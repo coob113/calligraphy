@@ -7,13 +7,20 @@
 
 	
         
- 
+            <script>
+  AFRAME.registerComponent('alpha-test', {
+    dependencies: ['material'],
+    init: function () {
+      this.el.getObject3D('mesh').material.alphaTest = 0.2;
+    }
+  });
+</script>
 
 <a-scene embedded arjs='trackingMethod: best;'>
 
 		<a-anchor >
             
-             <a-image position = "0 0 0" width="1" height="1" material="opacity: 0.2; side: double; transparent: true;" shader = "standart" src="https://raw.githubusercontent.com/coob113/calligraphy/master/abc2.png" transparent="true" alpha-test="0.5"></a-image>
+             <a-image position = "0 0 0" width="1" height="1" material="opacity: 0.2; side: double; transparent: true;" src="https://raw.githubusercontent.com/coob113/calligraphy/master/abc2.png" transparent="true" alpha-test="0.2"></a-image>
              
     
         
