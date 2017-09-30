@@ -7,16 +7,15 @@
 
 	<a-scene embedded arjs='trackingMethod: best;'>
 
-		<a-anchor >
-      
-       <a-assets>
-        <a-asset-item id="abc" src="https://raw.githubusercontent.com/coob113/calligraphy/master/abc1.gltf"></a-asset-item>
-    </a-assets>
+		<a-anchor>
+            
+            <a-assets>
+                <a-asset-item id="abc" src="https://raw.githubusercontent.com/coob113/calligraphy/master/scene.gltf"></a-asset-item>
+            </a-assets>
            
             <a-box position='0 0 0' scale="0.5 0.01 0.5" material='opacity: 0.2;' rotation='0 0 0'></a-box>
             
-             <a-entity gltf-model-next="#abc">
-        </a-entity>
+            <a-entity gltf-model-next="#abc"></a-entity>
             
             
             <!-- <a-entity text="opacity: 0.5; color: black; align: center; baseline: top; width: 2; font: https://raw.githubusercontent.com/coob113/calligraphy/master/font4.fnt; value: Learn Calligraphy with AR.js; wrapCount: 11" position="0 0 0.7" rotation="-90 0 0"></a-entity>
