@@ -5,14 +5,27 @@
     
 <body style='margin : 0px; overflow: hidden;'>
 
-	<a-scene embedded arjs='trackingMethod: best;'>
+	
+            <a-assets>
+                <img id="transpImage" crossorigin="anonymous" src="http://ekladata.com/hXTGfWnZm170W274zDRObDlqOlc.png">
+            </a-assets>
+            
+            <script>
+  AFRAME.registerComponent('alpha-test', {
+    dependencies: ['material'],
+    init: function () {
+      this.el.getObject3D('mesh').material.alphaTest = 0.5;
+    }
+  });
+</script>
+
+<a-scene embedded arjs='trackingMethod: best;'>
 
 		<a-anchor >
             
+             <a-image position = "0 1.6 -1" width="1" height="1" src="#transpImage" transparent="true" alpha-test="0.5"></a-image>
         
             <a-box position='0 0 0' scale="0.5 0.01 0.5" material='opacity: 0.2;' rotation='0 0 0'></a-box>
-            
- <a-entity scale="0.2 0.2 0.2" material="side: double; color: #EF2D5E; transparent: true;"  gltf-model="https://raw.githubusercontent.com/coob113/calligraphy/master/scene.gltf"></a-entity>
             
             <!-- <a-entity text="opacity: 0.5; color: black; align: center; baseline: top; width: 2; font: https://raw.githubusercontent.com/coob113/calligraphy/master/font4.fnt; value: Learn Calligraphy with AR.js; wrapCount: 11" position="0 0 0.7" rotation="-90 0 0"></a-entity>-->
             
